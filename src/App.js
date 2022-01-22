@@ -1,9 +1,10 @@
 import './App.css';
+import { DashboardLayout } from './components/dashboard-layout/dashboard-layout';
 
 function App() {
   return (
     <div className='App'>
-      <h1> ISSO É UM TESTE.</h1>
+      <DashboardLayout />
     </div>
   );
 }

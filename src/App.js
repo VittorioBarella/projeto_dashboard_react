@@ -1,11 +1,19 @@
 import './App.css';
-import { DashboardLayout } from './components/dashboard-layout/dashboard-layout';
+import { HashRouter } from 'react-router-dom';
+
+import { DashboardSidebar } from './components/dashboard-sidebar/dashboard-sidebar';
+import { Home } from './components/home/home';
+import { AccountProfile } from './components/account/account-profile';
 
 function App() {
   return (
-    <div className='App'>
-      <DashboardLayout />
-    </div>
+    <HashRouter>
+      <div className='App'>
+        <DashboardSidebar />
+        <Home />
+        <AccountProfile />
+      </div>
+    </HashRouter>
   );
 }
 

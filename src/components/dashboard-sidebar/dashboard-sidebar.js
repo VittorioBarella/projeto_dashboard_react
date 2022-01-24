@@ -1,7 +1,7 @@
-import React, { useEffect } from 'react';
-import Logo from '../../img/logo.png';
-import './dashboard-sidebar.css';
-import { Link } from 'react-router-dom';
+import React, { useEffect } from "react";
+import Logo from "../../img/logo.png";
+import "./dashboard-sidebar.css";
+import { Link } from "react-router-dom";
 import {
   FaDelicious,
   FaShoppingCart,
@@ -10,37 +10,33 @@ import {
   FaRegClock,
   FaCog,
   FaSignOutAlt,
-} from 'react-icons/fa';
+} from "react-icons/fa";
 
 export function DashboardSidebar() {
   useEffect(() => {
     const mainMenuLi = document
-      .getElementById('mainMenu')
-      .querySelectorAll('li');
+      .getElementById("mainMenu")
+      .querySelectorAll("li");
 
     function changeActive() {
-      mainMenuLi.forEach((n) => n.classList.remove('active'));
-      this.classList.add('active');
+      mainMenuLi.forEach((n) => n.classList.remove("active"));
+      this.classList.add("active");
     }
 
-    mainMenuLi.forEach((n) => n.addEventListener('click', changeActive));
+    mainMenuLi.forEach((n) => n.addEventListener("click", changeActive));
   }, []);
 
   return (
     <menu>
-      <img src={Logo} alt='' />
-      <ul id='mainMenu'>
-        <Link to='/home'>
-          <Icon icon={FaDelicious} />
-        </Link>
+      <img src={Logo} alt="" />
+      <ul id="mainMenu">
+        <Icon icon={FaDelicious} to="/home" />
         <Icon icon={FaShoppingCart} />
         <Icon icon={FaWallet} />
         <Icon icon={FaRegClock} />
-        <Link to='/account-profile'>
-          <Icon icon={FaUserEdit} />
-        </Link>
+        <Icon icon={FaUserEdit} to="/account-profile" />
       </ul>
-      <ul className='settingsMenu'>
+      <ul className="settingsMenu">
         <Icon icon={FaCog} />
         <Icon icon={FaSignOutAlt} />
       </ul>
@@ -49,13 +45,13 @@ export function DashboardSidebar() {
 }
 
 // OS ÍCONES ESTÃO SENDO PASSADOS POR PROPS.
-const Icon = ({ icon }) => {
+const Icon = ({ icon, to }) => {
   const NewIcon = icon;
   return (
     <li>
-      <a href='#'>
+      <Link to={to || "#"}>
         <NewIcon />
-      </a>
+      </Link>
     </li>
   );
 };

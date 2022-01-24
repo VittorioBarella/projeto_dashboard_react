@@ -31,9 +31,9 @@ export function DashboardSidebar() {
       <img src={Logo} alt='' />
       <ul id='mainMenu'>
         <Icon icon={FaDelicious} to='/home' />
-        <Icon icon={FaTasks} to='#' />
-        <Icon icon={RiHealthBookLine} to='#' />
-        <Icon icon={FaWallet} to='#' />
+        <Icon icon={FaTasks} to='/tasks' />
+        <Icon icon={RiHealthBookLine} to='/health' />
+        <Icon icon={FaWallet} to='/wallet' />
 
         <Icon icon={FaUserEdit} to='/account-profile' />
       </ul>

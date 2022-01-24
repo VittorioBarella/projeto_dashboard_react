@@ -11,8 +11,9 @@ function App() {
       <div className='App'>
         <DashboardSidebar />
         <DashboardNavbar />
-
-        <Routes sx={{ mt: 3 }} />
+        <body className='content'>
+          <Routes />
+        </body>
       </div>
     </BrowserRouter>
   );

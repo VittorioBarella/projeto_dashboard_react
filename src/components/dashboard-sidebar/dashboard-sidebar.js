@@ -1,44 +1,45 @@
-import React, { useEffect } from "react";
-import Logo from "../../img/logo.png";
-import "./dashboard-sidebar.css";
-import { Link } from "react-router-dom";
+import React, { useEffect } from 'react';
+import Logo from '../../img/logo.png';
+import './dashboard-sidebar.css';
+import { Link } from 'react-router-dom';
 import {
   FaDelicious,
-  FaShoppingCart,
+  FaTasks,
   FaWallet,
   FaUserEdit,
-  FaRegClock,
   FaCog,
   FaSignOutAlt,
-} from "react-icons/fa";
+} from 'react-icons/fa';
+import { RiHealthBookLine } from 'react-icons/ri';
 
 export function DashboardSidebar() {
   useEffect(() => {
     const mainMenuLi = document
-      .getElementById("mainMenu")
-      .querySelectorAll("li");
+      .getElementById('mainMenu')
+      .querySelectorAll('li');
 
     function changeActive() {
-      mainMenuLi.forEach((n) => n.classList.remove("active"));
-      this.classList.add("active");
+      mainMenuLi.forEach((n) => n.classList.remove('active'));
+      this.classList.add('active');
     }
 
-    mainMenuLi.forEach((n) => n.addEventListener("click", changeActive));
+    mainMenuLi.forEach((n) => n.addEventListener('click', changeActive));
   }, []);
 
   return (
     <menu>
-      <img src={Logo} alt="" />
-      <ul id="mainMenu">
-        <Icon icon={FaDelicious} to="/home" />
-        <Icon icon={FaShoppingCart} to="#" />
-        <Icon icon={FaWallet} to="#" />
-        <Icon icon={FaRegClock} to="#" />
-        <Icon icon={FaUserEdit} to="/account-profile" />
+      <img src={Logo} alt='' />
+      <ul id='mainMenu'>
+        <Icon icon={FaDelicious} to='/home' />
+        <Icon icon={FaTasks} to='#' />
+        <Icon icon={RiHealthBookLine} to='#' />
+        <Icon icon={FaWallet} to='#' />
+
+        <Icon icon={FaUserEdit} to='/account-profile' />
       </ul>
-      <ul className="settingsMenu">
-        <Icon icon={FaCog} to="#" />
-        <Icon icon={FaSignOutAlt} to="#" />
+      <ul className='settingsMenu'>
+        <Icon icon={FaCog} to='#' />
+        <Icon icon={FaSignOutAlt} to='#' />
       </ul>
     </menu>
   );

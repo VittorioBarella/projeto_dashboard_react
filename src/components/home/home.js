@@ -1,7 +1,9 @@
+import DashboardNavbar from '../dashboard-navbar/dashboard-navbar';
 export function Home() {
   return (
     <div>
-      <h1>Home Works !</h1>
+      {' '}
+      <DashboardNavbar />
     </div>
   );
 }

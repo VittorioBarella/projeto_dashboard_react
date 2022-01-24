@@ -5,6 +5,7 @@ import { Tasks } from './components/tasks/tasks';
 import { Health } from './components/health/health';
 import { Wallet } from './components/wallet/wallet';
 import { AccountProfile } from './components/account/account-profile';
+import { Settings } from './components/settings/settings';
 
 function Routes() {
   return (
@@ -27,6 +28,10 @@ function Routes() {
 
       <Route exact path='/account-profile'>
         <AccountProfile />
+      </Route>
+
+      <Route exact path='/settings'>
+        <Settings />
       </Route>
     </Switch>
   );

@@ -38,7 +38,7 @@ export function DashboardSidebar() {
         <Icon icon={FaUserEdit} to='/account-profile' />
       </ul>
       <ul className='settingsMenu'>
-        <Icon icon={FaCog} to='#' />
+        <Icon icon={FaCog} to='/settings' />
         <Icon icon={FaSignOutAlt} to='#' />
       </ul>
     </menu>

@@ -31,14 +31,14 @@ export function DashboardSidebar() {
       <img src={Logo} alt="" />
       <ul id="mainMenu">
         <Icon icon={FaDelicious} to="/home" />
-        <Icon icon={FaShoppingCart} />
-        <Icon icon={FaWallet} />
-        <Icon icon={FaRegClock} />
+        <Icon icon={FaShoppingCart} to="#" />
+        <Icon icon={FaWallet} to="#" />
+        <Icon icon={FaRegClock} to="#" />
         <Icon icon={FaUserEdit} to="/account-profile" />
       </ul>
       <ul className="settingsMenu">
-        <Icon icon={FaCog} />
-        <Icon icon={FaSignOutAlt} />
+        <Icon icon={FaCog} to="#" />
+        <Icon icon={FaSignOutAlt} to="#" />
       </ul>
     </menu>
   );
@@ -49,7 +49,7 @@ const Icon = ({ icon, to }) => {
   const NewIcon = icon;
   return (
     <li>
-      <Link to={to || "#"}>
+      <Link to={to}>
         <NewIcon />
       </Link>
     </li>

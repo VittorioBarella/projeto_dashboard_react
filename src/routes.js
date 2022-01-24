@@ -1,16 +1,18 @@
-import React from 'react';
-import { HashRouter, Switch, Route } from 'react-router-dom';
-import { Home } from './components/home/home';
-import { AccountProfile } from './components/account/account-profile';
+import React from "react";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { Home } from "./components/home/home";
+import { AccountProfile } from "./components/account/account-profile";
 
 function Routes() {
   return (
-    <HashRouter>
-      <Switch>
-        <Route exact path='/home' component={Home} />
-        <Route exact path='/account-profile' component={AccountProfile} />
-      </Switch>
-    </HashRouter>
+    <Switch>
+      <Route exact path="/home">
+        <Home />
+      </Route>
+      <Route exact path="/account-profile">
+        <AccountProfile />
+      </Route>
+    </Switch>
   );
 }
 

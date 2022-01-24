@@ -1,19 +1,16 @@
-import './App.css';
-import { HashRouter } from 'react-router-dom';
-
-import { DashboardSidebar } from './components/dashboard-sidebar/dashboard-sidebar';
-import { Home } from './components/home/home';
-import { AccountProfile } from './components/account/account-profile';
+import "./App.css";
+import { BrowserRouter } from "react-router-dom";
+import { DashboardSidebar } from "./components/dashboard-sidebar/dashboard-sidebar";
+import Routes from "./routes";
 
 function App() {
   return (
-    <HashRouter>
-      <div className='App'>
+    <BrowserRouter>
+      <div className="App">
         <DashboardSidebar />
-        <Home />
-        <AccountProfile />
+        <Routes />
       </div>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 

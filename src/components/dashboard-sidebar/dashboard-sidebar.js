@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import Logo from '../../img/logo.png';
 import './dashboard-sidebar.css';
 import { Link } from 'react-router-dom';
 import {
@@ -28,7 +27,6 @@ export function DashboardSidebar() {
 
   return (
     <menu>
-      <img src={Logo} alt='' />
       <ul id='mainMenu'>
         <Icon icon={FaDelicious} to='/home' />
         <Icon icon={FaTasks} to='/tasks' />

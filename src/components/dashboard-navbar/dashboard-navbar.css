@@ -1,3 +1,13 @@
+.navbar{
+    background-color: #091D34;
+}
+
+.webSiteLogo{
+    margin-left: -15px;
+    width: 100px;
+    height: 60px;
+}
+
 .plusIcon{
     margin-left: 10px;
     margin-bottom: -2px;

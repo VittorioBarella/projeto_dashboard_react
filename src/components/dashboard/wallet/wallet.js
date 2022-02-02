@@ -1,6 +1,6 @@
 export function Wallet() {
   return (
-    <div>
+    <div className='content'>
       <h1>Wallet Works !</h1>
     </div>
   );

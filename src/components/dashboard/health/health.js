@@ -1,6 +1,6 @@
 export function Health() {
   return (
-    <div>
+    <div className='content'>
       <h1>Health Works !</h1>
     </div>
   );

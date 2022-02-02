@@ -11,9 +11,8 @@ function App() {
       <div className='App'>
         <DashboardSidebar />
         <DashboardNavbar />
-        <body className='content'>
-          <Routes />
-        </body>
+
+        <Routes />
       </div>
     </BrowserRouter>
   );

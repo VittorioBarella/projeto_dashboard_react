@@ -10,6 +10,11 @@
   display: none;
 }
 
+.content{
+  width: 100%;
+  margin-top: 90px;
+  margin-left: 15px;
+}
 
 @media screen and (max-width: 525px){
   .App{

@@ -1,4 +1,10 @@
-.content{
-    margin-top: 85px;
-    margin-left: -448px;
+.btn-addNewTask{
+    margin-top: 10px;    
+    float: right;
+    cursor: pointer;
+}
+
+.plusIcon{
+    margin-left: 10px;
+    margin-bottom: -2px;
 }

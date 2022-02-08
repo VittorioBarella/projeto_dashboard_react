@@ -16,9 +16,8 @@ menu img{
 }
 
 menu ul{
-    padding-top: 80px;
+    padding-top: 90px;
     width: 100%;
-    display: flex;
     flex-direction: column;
     align-items: center;
 }

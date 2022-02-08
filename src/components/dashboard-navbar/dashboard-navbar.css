@@ -8,3 +8,10 @@
     height: 60px;
 }
 
+.userProfileImage{
+    margin-right:10px;
+}
+
+.dropdown-toggle{
+    color:#fff;
+}

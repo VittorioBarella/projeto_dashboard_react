@@ -20,7 +20,7 @@ function DashboardNavbar() {
       <li className="nav-item dropdown">
         <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <img src={UserProfileImage} width="30" height="30" className="d-inline-block align-top userProfileImage" alt="" />
-          Vittório Andrade
+          <span className='text-light'>Vittório Andrade</span>
         </a>
         <div className="dropdown-menu" aria-labelledby="navbarDropdown">
           <a className="dropdown-item" href="#">Action</a>

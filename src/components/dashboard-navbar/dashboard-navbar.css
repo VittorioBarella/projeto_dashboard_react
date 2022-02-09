@@ -12,6 +12,10 @@
     margin-right:10px;
 }
 
+.dropdown{
+    margin-top: -20px;
+}
+
 .dropdown-toggle{
     color:#fff;
 }

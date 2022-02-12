@@ -2,7 +2,7 @@ import React from 'react';
 
 export function LatestExams() {
   return (
-    <div className='col-md-4  justify-content-center'>
+    <div className='justify-content-center'>
       <h3>Últimas Provas</h3>
       <div className='list-group'>
         <a href='#' className='list-group-item list-group-item-action active'>

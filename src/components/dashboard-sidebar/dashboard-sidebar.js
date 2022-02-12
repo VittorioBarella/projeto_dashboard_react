@@ -8,6 +8,7 @@ import {
   FaUserEdit,
   FaCog,
   FaSignOutAlt,
+  FaGraduationCap,
 } from 'react-icons/fa';
 import { RiHealthBookLine } from 'react-icons/ri';
 
@@ -30,6 +31,7 @@ export function DashboardSidebar() {
       <ul id='mainMenu'>
         <Icon icon={FaDelicious} to='/home' />
         <Icon icon={FaTasks} to='/tasks' />
+        <Icon icon={FaGraduationCap} to='/college' />
         <Icon icon={RiHealthBookLine} to='/health' />
         <Icon icon={FaWallet} to='/wallet' />
 

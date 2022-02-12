@@ -4,7 +4,6 @@ import { CreateTaskModal } from './create-task-modal/create-task-modal';
 import { TableTasks } from './table-tasks/table-tasks';
 import './tasks.css';
 
-
 export function Tasks() {
   return (
     <div className='content'>

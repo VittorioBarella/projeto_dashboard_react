@@ -1,8 +1,9 @@
 import React from 'react';
+import './event-card.css';
 
 export function CardEvent() {
   return (
-    <div className='card text-center'>
+    <div className='card text-center event-card'>
       <div className='card-header'>Featured</div>
       <div className='card-body'>
         <h5 className='card-title'>Special title treatment</h5>

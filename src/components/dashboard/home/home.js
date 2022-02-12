@@ -30,10 +30,10 @@ export function Home() {
           </div>
         </div>
         <div className='row align-items-center'>
-          <div className='col mt-5 mb-5'>
+          <div className='col mt-5 mb-5 d-flex justify-content-center'>
             <Calendar onChange={onChange} value={value} />
           </div>
-          <div className='col'>
+          <div className='col d-flex justify-content-center'>
             <CardEvent />
           </div>
         </div>

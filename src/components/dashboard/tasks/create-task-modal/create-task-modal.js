@@ -34,11 +34,12 @@ export function CreateTaskModal() {
                                     className='form-control'
                                     id='exampleFormControlSelect1'
                                 >
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
+                                    <option>Selecione...</option>
+                                    <option>Fazer Super Mercado</option>
+                                    <option>Lavar o Carro</option>
+                                    <option>Limpar a Casa</option>
+                                    <option>Comprar Remédios</option>
+                                    <option>Organizar a Semana</option>
                                 </select>
                             </div>
                             <div className='form-group'>

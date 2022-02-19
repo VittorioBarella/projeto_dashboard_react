@@ -36,7 +36,7 @@ export function EditModal() {
                                     className='form-control'
                                     id='exampleFormControlSelect1'
                                 >
-                                    <option></option>
+                                    <option>Selecione...</option>
                                     <option>Fazer Super Mercado</option>
                                     <option>Lavar o Carro</option>
                                     <option>Limpar a Casa</option>

@@ -10,7 +10,7 @@ app.use(express.json());
 
 // CONEXÃO COM O BANCO DE DADOS.
 mongoose
-  .connect('mongodb://localhost/tarefa', {
+  .connect('mongodb://localhost:27017/DatabaseDashboard', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })

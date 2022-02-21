@@ -16,6 +16,7 @@ const Tarefa = new mongoose.Schema({
   status: {
     type: String,
     required: true,
+    enum: ['Completa', 'Pendente', 'Rejeitada', 'Cancelada'],
   },
 });
 
